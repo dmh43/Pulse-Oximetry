@@ -2,15 +2,6 @@
 <Project Type="Project" LVVersion="14008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{3E2489D2-5C4E-4A42-8D94-DF5526DEFDEA}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/error out</Property>
-	<Property Name="varPersistentID:{4F2AB876-CC26-4867-9571-61B443447E6C}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/reset</Property>
-	<Property Name="varPersistentID:{8959BACD-93A0-4B2C-B99A-EAF27B91D789}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/input</Property>
-	<Property Name="varPersistentID:{8F675570-F05B-4FB9-931D-BD0D408384C1}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/error in</Property>
-	<Property Name="varPersistentID:{9C1633B3-13E5-40DD-8B28-8A067F9CD2D9}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/full</Property>
-	<Property Name="varPersistentID:{9F599063-009D-4AD4-931C-F27CBAA9A9F5}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/array size</Property>
-	<Property Name="varPersistentID:{B45ADA18-1EF2-4D42-AA57-61B1E8392151}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/enable</Property>
-	<Property Name="varPersistentID:{B65A5043-5BEC-401F-A550-EE5444D2A079}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/collected data</Property>
-	<Property Name="varPersistentID:{D8D61BF8-B360-4F6F-8F55-8172C9C353E6}" Type="Ref">/myRIO-1900/Main.vi/Collect Numeric Array/points collected</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -37,6 +28,7 @@
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 		</Item>
 		<Item Name="Analyze.vi" Type="VI" URL="../Analyze.vi"/>
+		<Item Name="collect_array_variant.vi" Type="VI" URL="../../../PQ/collect_array_variant.vi"/>
 		<Item Name="UI.vi" Type="VI" URL="../UI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -193,19 +185,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi">
-			<Item Name="Collect Numeric Array" Type="IIO Function Block">
-				<Item Name="array size" Type="Variable"/>
-				<Item Name="collected data" Type="Variable"/>
-				<Item Name="enable" Type="Variable"/>
-				<Item Name="error in" Type="Variable"/>
-				<Item Name="error out" Type="Variable"/>
-				<Item Name="full" Type="Variable"/>
-				<Item Name="input" Type="Variable"/>
-				<Item Name="points collected" Type="Variable"/>
-				<Item Name="reset" Type="Variable"/>
-			</Item>
-		</Item>
+		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Tasks.ctl" Type="VI" URL="../Tasks.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -313,6 +293,7 @@ AddOutputFilter chunkFilter
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="collect_array_variant.vi" Type="VI" URL="../../../PQ/collect_array_variant.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
