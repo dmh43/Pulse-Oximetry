@@ -29,6 +29,7 @@
 		</Item>
 		<Item Name="Analyze.vi" Type="VI" URL="../Analyze.vi"/>
 		<Item Name="collect_array_variant.vi" Type="VI" URL="../../../PQ/collect_array_variant.vi"/>
+		<Item Name="separate_led_data.vi" Type="VI" URL="../separate_led_data.vi"/>
 		<Item Name="UI.vi" Type="VI" URL="../UI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
